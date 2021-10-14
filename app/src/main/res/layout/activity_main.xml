@@ -27,6 +27,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
+            android:onClick="Calcular"
             android:gravity="center"
             android:textSize="25dp"
             android:inputType="textPersonName"
@@ -56,18 +57,21 @@
                 android:id="@+id/rbavion"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
+                android:onClick="Calcular"
                 android:checked="true"
                 android:text="AVION" />
 
             <RadioButton
                 android:id="@+id/rbmoto"
                 android:layout_width="match_parent"
+                android:onClick="Calcular"
                 android:layout_height="wrap_content"
                 android:text="MOTO" />
 
             <RadioButton
                 android:id="@+id/rbbus"
                 android:layout_width="match_parent"
+                android:onClick="Calcular"
                 android:layout_height="34dp"
                 android:text="BUS" />
         </RadioGroup>
@@ -92,6 +96,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
+            android:onClick="Calcular"
             android:gravity="center"
             android:inputType="textPersonName"
             android:hint="ingrese la cantidad de personas que viajan"
@@ -119,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="Calcular"
             android:text="alimentacion"
             android:textSize="25dp" />
     </LinearLayout>
@@ -169,7 +175,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Guardar"
-            android:onClick="Calcular"
+            android:onClick="Guardar"
             android:textSize="20dp" />
 
         <Button
@@ -177,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="85dp"
             android:layout_weight="1"
-
+            android:onClick="consultar"
             android:text="Consultar"
             android:textSize="20dp" />
     </LinearLayout>
